@@ -1,0 +1,54 @@
+{
+  "name": "deep-learning-with-javascript-in-chinese",
+  "version": "1.0.0",
+  "description": "Deep learning with javascript in chinese",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "precommit": "lint-staged",
+    "contributor:add": "all-contributors add",
+    "contributor:generate": "all-contributors generate"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js,json,css,md}": [
+        "prettier --write",
+        "git add"
+      ]
+    },
+    "ignore": []
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wendydesigner/DLwithjs---chinese.git"
+  },
+  "keywords": [
+    "typescript",
+    "vue"
+  ],
+  "author": "wenyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wendydesigner/DLwithjs---chinese/issues"
+  },
+  "homepage": "https://github.com/Wendydesigner/DLwithjs---chinese#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-angular": "^7.5.0",
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.44",
+    "@vuepress/plugin-container": "^1.0.0-alpha.44",
+    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.44",
+    "@vuepress/plugin-pwa": "^1.0.0-alpha.44",
+    "all-contributors-cli": "^5.4.0",
+    "eslint": "^5.6.1",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "prettier": "1.14.2",
+    "vuepress": "^1.0.0-alpha.44"
+  },
+  "dependencies": {}
+}

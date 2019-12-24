@@ -1,4 +1,10 @@
-# 深度学习之Javascript
+---
+home: true
+heroImage: /LOGO.jpg
+actionText: 开始 →
+actionLink: /introduction/
+---
+
 
 此书是 [《DEEP LEARNING WITH JAVASCRIPT》](https://livebook.manning.com/book/deep-learning-with-javascript/welcome/v-8/) 的中文翻译版.
 
