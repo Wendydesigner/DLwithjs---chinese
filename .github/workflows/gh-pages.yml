@@ -24,11 +24,8 @@ jobs:
       with:
         node-version: '10.x'
 
-    - name: Install yarn
-      run: npm install yarn -g
-
     - name: Install Dependencies
-      run: yarn install
+      run: npm install
 
     - name: Build
       run: npm run build
