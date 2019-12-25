@@ -17,10 +17,6 @@ body
   color $textColor
 
 .page
-  position absolute
-  margin-top $navbarHeight
-  left 1em
-  right 1em
   padding-left $sidebarWidth
 
 .navbar
@@ -57,7 +53,7 @@ body
   border-right 1px solid $borderColor
   overflow-y auto
 
-.content:not(.custom)
+.content__default:not(.custom)
   @extend $wrapper
   > *:first-child
     margin-top $navbarHeight
@@ -70,7 +66,7 @@ body
   img
     max-width 100%
 
-.content.custom
+.content__default.custom
   padding 0
   margin 0
   img
