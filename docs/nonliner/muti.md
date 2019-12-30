@@ -139,7 +139,11 @@ predictOut 是二维张量[numExamples，3]。调用 argMax 方法会使形状�
 ## 3.3.3 分类交叉熵：多分类的损失函数
 
 在二分类示例中，我们看到了如何将二进制交叉熵用作损失函数，以及为什么不能将其他更易于理解的指标（如准确性和召回率）用作损失函数。多类分类的情况非常相似。一个简单的指标，即准确性，该准确性是模型正确分类的示例的一部分。其度量标准对于人类理解模型的性能非常重要，并在清单 3.8 的代码段中使用了该度量标准：
-` ``js model.compile({ optimizer: optimizer, loss: 'categoricalCrossentropy', metrics: ['accuracy'], }); ` ``
+
+```js
+model.compile({ optimizer: optimizer, loss: 'categoricalCrossentropy', metrics: ['accuracy'] });
+```
+
 但是，准确度不是损失函数好的选择，因为它与二分类的准确度一样会遭受零梯度问题。因此，人们为多分类设计了一种特殊的损失函数：分类交叉熵。它只是将二元交叉熵泛化为两个以上类别的情况。
 
 ###### 代码 3.9 用于分类交叉熵损失函数的代码（此用于单个输入示例）
