@@ -1,8 +1,10 @@
 <div align="center">
     <a href="https://wendydesigner.github.io/DLwithjs---chinese/">
-        <img src="https://wendydesigner.github.io/DLwithjs---chinese/LOGO.jpg" alt="✨ Deep learning with javascript ✨" width="800px" />
+        <img src="https://wendydesigner.github.io/DLwithjs---chinese/LOGO.jpg" alt="✨ Deep learning with javascript ✨" width="150px" />
     </a>
+    <h2>Deep Learning with Javascript</h2>
 </div>
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 此书是 [《DEEP LEARNING WITH JAVASCRIPT》](https://livebook.manning.com/book/deep-learning-with-javascript/welcome/v-8/) 的中文翻译版.
