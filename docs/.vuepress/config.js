@@ -60,7 +60,13 @@ module.exports = {
         title: '3.非线性回归及加权',
         collapsable: true,
         path: '/nonliner/',
-        children: []
+        children: [
+          '/nonliner/what.md',
+          '/nonliner/classify.md',
+          '/nonliner/muti.md',
+          '/nonliner/summary.md',
+          '/nonliner/exercise.md'
+        ]
       },
       {
         title: '4.卷积神经网络识别图像和声音',
