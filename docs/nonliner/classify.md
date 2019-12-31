@@ -70,6 +70,7 @@ TensorFlow.js 支持的优化器
 |AdaDelta |' adadelta '|tf.train .adadelta|类似于 RMSProp 的方式缩放每个权重参数的学习率|
 | adam| “ adam”|tf.train .adam|可以理解为 AdaDelta 的自适应学习率方法和动量方法的结合|
 |AdaMax|' adamax '|tf.train .adamax|与 ADAM 类似，使用略有不同的算法来跟踪梯度的大小|
+
 明显的问题是，鉴于正在研究的机器学习问题和模型，应该使用哪个优化程序。这在深度学习领域尚无共识（这就是 TensorFlow.js 提供了上表列出的所有优化器的原因！）实际上，您应该从流行的优化器开始，比如 adam 和 rmsprop 。如果有足够的时间和计算资源，您也可以将优化器视为超参数，并通过超参数调整来找到能够提供最佳训练结果的选择（请参阅第 3.1.2 节）。
 
 ## 3.2.2 评估二元分类器：精度，召回率，准确性和 ROC 曲线
