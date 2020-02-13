@@ -65,14 +65,21 @@ module.exports = {
           '/nonliner/classify.md',
           '/nonliner/muti.md',
           '/nonliner/summary.md',
-          '/nonliner/exercise.md'
+          '/nonliner/exercises.md'
         ]
       },
       {
         title: '4.卷积神经网络识别图像和声音',
         collapsable: true,
         path: '/convolution/',
-        children: []
+        children: [
+          '/convolution/imgRepresent.md',
+          '/convolution/network.md',
+          '/convolution/cnnNode.md',
+          '/convolution/audioCnn.md',
+          '/convolution/summary.md',
+          '/convolution/exercises.md'
+        ]
       },
       {
         title: '5.转移学习：重用预训练的神经网络',
