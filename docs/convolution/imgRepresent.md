@@ -8,7 +8,7 @@
 
 ###### 图 4.1 在深度学习中把一个 MNIST 图像表示为张量。为了可视化，我们将 MNIST 图像从 28*28 缩小到 8*8。该图像是灰度图像，高宽通道（HWC）形状为[8，8，1]。此图中省略了沿最后一个维度的单色通道。
 
-  <img :src="$withBase('/nonliner/4.1.png')" alt="figure4.1"/>
+  <img :src="$withBase('/convolution/4.1.png')" alt="figure4.1"/>
 
 ## 4.1.1 MNIST 数据集
 

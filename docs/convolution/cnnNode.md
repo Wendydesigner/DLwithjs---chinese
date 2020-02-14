@@ -140,7 +140,7 @@ Dropout 层是您在本章中遇到的另一个新的 TensorFlow.js 图层类型
 
 ###### 图 4.11 丢弃层的工作方式示意图。在此示例中，输入张量为 2D，形状为[4，2]。丢弃层的 rate 配置为 0.25，这导致在训练阶段随机选择输入张量的 25％（即八分之二）并将其设置为零。在推断阶段，该层充当普通的直通层。
 
-<img :src="$withBase('/nonliner/4.11.png')" alt="figure4.11"/>
+<img :src="$withBase('/convolution/4.11.png')" alt="figure4.11"/>
 
 如此简单的算法是解决过度拟合的最有效方法之一，这似乎很奇怪。为什么行得通？丢弃算法（神经网络算法中的一种）的发明者 Geoff Hinton 说，他受到一些银行用来防止员工欺诈机制的启发。用他自己的话说：
 
@@ -214,8 +214,8 @@ const loadedModel = await tf.loadLayersModel('file:///tmp/tfjs-node-mnist');
 
 tf.loadLayersModel（）通过反序列化 model.json 中保存的拓扑数据来重构模型。然后，tf.loadLayersModel（）使用 model.json 中的清单读取 weights.bin 中的二进制权重值，并将模型的权重强制设置为这些值。
 
-像 model.save（）一样，tf.loadLayersModel（）是异步的，因此我们在此处调用 await。一旦调用返回，从所有意图和目的来看，loadedModel 对象等效于使用清单 4.5 和 4.6 中的 JavaScript 代码创建和训练的模型。您可以通过调用其 summary（）方法来打印该模型的效果，通过调用其 predict（）方法来使用其执行推理，通过使用 validate（）方法来评估其准确性，甚至可以使用 fit（）方法对其进行重新训练。如果需要，还可以再次保存模型。当我们在第 5 章中讨论转移学习时，重新训练和保存已加载模型的工作流程将很重要。  
-  
+像 model.save（）一样，tf.loadLayersModel（）是异步的，因此我们在此处调用 await。一旦调用返回，从所有意图和目的来看，loadedModel 对象等效于使用清单 4.5 和 4.6 中的 JavaScript 代码创建和训练的模型。您可以通过调用其 summary（）方法来打印该模型的效果，通过调用其 predict（）方法来使用其执行推理，通过使用 validate（）方法来评估其准确性，甚至可以使用 fit（）方法对其进行重新训练。如果需要，还可以再次保存模型。当我们在第 5 章中讨论转移学习时，重新训练和保存已加载模型的工作流程将很重要。
+
 上一段中所说的内容也适用于浏览器环境。您保存的文件可用于重构网页中的模型。重构后的模型支持完整的 tf.LayersModel 工作流程，但需要注意的是，如果您重新训练整个模型，由于增强的卷积网络很大，因此它将特别缓慢且效率低下。在 tfjs-node 和浏览器中加载模型之间唯一的根本不同是，在浏览器中应使用 file：//以外的 URL 方案。通常，您可以将 model.json 和 weights.bin 文件作为静态资产文件放置在 HTTP 服务器上。假设您的主机名是 localhost，并且文件在服务器路径 my / models /下显示；您可以使用以下行在浏览器中加载模型：
 
 ```js
