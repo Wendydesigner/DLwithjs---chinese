@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "cee3668b4208476ad5c941c8a8c070da"
+    "revision": "0752a2c2ba15e9b8a8b6a978647c2f48"
   },
   {
     "url": "assets/css/0.styles.9dc40fed.css",
@@ -158,20 +158,20 @@ self.__precacheManifest = [
     "revision": "1d055f74f320515c0d1a5fe2bb0aae28"
   },
   {
-    "url": "assets/js/38.d9d35fe9.js",
-    "revision": "8603cd4a7edf0a7264a82789f1cba84f"
+    "url": "assets/js/38.7a6306d8.js",
+    "revision": "5de235fff159545bd0651cc0bd295f48"
   },
   {
-    "url": "assets/js/39.03477526.js",
-    "revision": "03bf911c955bbd8c9d58d2272315f456"
+    "url": "assets/js/39.ef062696.js",
+    "revision": "84d0e843ce76b57ce0bae96146ab84f9"
   },
   {
     "url": "assets/js/4.423b4959.js",
     "revision": "c1e6e8bca8bb9fef996d63104b9cfb32"
   },
   {
-    "url": "assets/js/40.2f67dcac.js",
-    "revision": "8f185ce21d6749e2016149ecdfd23267"
+    "url": "assets/js/40.18173e2f.js",
+    "revision": "ebe91b9ce5b14dc0d21c0f3b38d0afa2"
   },
   {
     "url": "assets/js/41.ca8d8cbb.js",
@@ -210,8 +210,8 @@ self.__precacheManifest = [
     "revision": "1da9b1b21a4c7f41c802bc398dfe5c2a"
   },
   {
-    "url": "assets/js/app.a506fa10.js",
-    "revision": "b08d8f2b4f35a8a55b666269aa4d802d"
+    "url": "assets/js/app.9703440d.js",
+    "revision": "294466bcf56e8bc71fde7f28d49194f4"
   },
   {
     "url": "convolution/4.1.png",
@@ -263,47 +263,47 @@ self.__precacheManifest = [
   },
   {
     "url": "convolution/audioCnn.html",
-    "revision": "735f7981fb9509480914f24ef93d6f65"
+    "revision": "a46f52dc6e3596f38e2d2f72a1d4445f"
   },
   {
     "url": "convolution/cnnNode.html",
-    "revision": "a9577aee2e94c9da014ea3b2d0339254"
+    "revision": "c4bd89e1aed5678cfe1136a22e386e51"
   },
   {
     "url": "convolution/exercises.html",
-    "revision": "58917a5d377956bebb966cf4ce1e9455"
+    "revision": "d0a8cf96807d47c4bc37c864066ac509"
   },
   {
     "url": "convolution/imgRepresent.html",
-    "revision": "683e030c579c8098100c0536a094ef36"
+    "revision": "1af7b6c57086a7c9c0ad74536c3cd1d0"
   },
   {
     "url": "convolution/index.html",
-    "revision": "37dc17a31c972e8ec2718535ec66d8c1"
+    "revision": "15b5c4d1a23cd49408d296055fcd16e1"
   },
   {
     "url": "convolution/network.html",
-    "revision": "77cab0a1b470bda527d75f6bf7b10a0a"
+    "revision": "acac780611bd7ef27f6e1e6040ced1f6"
   },
   {
     "url": "convolution/summary.html",
-    "revision": "00f9149d333c45a0142d6eaaa80cf0f2"
+    "revision": "fb652af10c2517792eef542b14c6cf5e"
   },
   {
     "url": "data/index.html",
-    "revision": "80c19cff3d154e2566fe3cc8ebb2a4d8"
+    "revision": "1e3b200ab46f7e42c2d18f192de0b00a"
   },
   {
     "url": "deploy/index.html",
-    "revision": "0d544573bba234ad238127b0e3370891"
+    "revision": "f744d027e4923d7965201589b73a1d3f"
   },
   {
     "url": "generative/index.html",
-    "revision": "8fa2304ba563ebcbf3285577935b6472"
+    "revision": "e2878173bfe8e2b8e9c76eef115636d5"
   },
   {
     "url": "index.html",
-    "revision": "1718feda0a3d3a42f3dd95c350fee513"
+    "revision": "337279bd55c990109c999a70eccc6a4b"
   },
   {
     "url": "introduction/1.10.png",
@@ -347,23 +347,23 @@ self.__precacheManifest = [
   },
   {
     "url": "introduction/dl.html",
-    "revision": "5ec156707703cb32cb87a3a1f2ff6ab4"
+    "revision": "848df5c6b0fc4f319dc9cb81b535a62c"
   },
   {
     "url": "introduction/exercises.html",
-    "revision": "7cce2b0696973286d8bea1cc32b3b94d"
+    "revision": "ec5104def2b73e927e328c3b4c1d190d"
   },
   {
     "url": "introduction/index.html",
-    "revision": "a25dcb8ed698aadfbe279a3331a70a01"
+    "revision": "fa2795f4d4c42ef8d7ec09720f1f9d48"
   },
   {
     "url": "introduction/summary.html",
-    "revision": "6b0ac0a357105d096404135882180a6a"
+    "revision": "cf14f5451e55987368be684119787b99"
   },
   {
     "url": "introduction/why.html",
-    "revision": "e9e279fefa1be840e26e75e7530956c7"
+    "revision": "18e753146291ab0f8348ddc84eb3ae60"
   },
   {
     "url": "liner/2.1.png",
@@ -415,31 +415,31 @@ self.__precacheManifest = [
   },
   {
     "url": "liner/example.html",
-    "revision": "05823b2c672d4f3fa337eb94fe076b0d"
+    "revision": "acf43b380a53f2299156c0dbbfe9b5af"
   },
   {
     "url": "liner/exercises.html",
-    "revision": "968a8d8bcb0f5131f9b3f825accbb8f7"
+    "revision": "6044087fc1ee03049e0f687efbd3bfe8"
   },
   {
     "url": "liner/fit.html",
-    "revision": "c48af2520255e4e235f515b75d6421ba"
+    "revision": "0181a2de9d6c7cb7737e78313db2d7c3"
   },
   {
     "url": "liner/how.html",
-    "revision": "1526deb2acebe054a6b975ec2b71dfd9"
+    "revision": "9a79ac90544852b90c19550ae2368cde"
   },
   {
     "url": "liner/index.html",
-    "revision": "f7d67dc9e888758b3fe3f921c005716e"
+    "revision": "c6b12fef8753b66ebfa8d900d1c84eea"
   },
   {
     "url": "liner/mutiinput.html",
-    "revision": "8ca5a50651b1362f6a2b219c7f6feccd"
+    "revision": "95522e5033ccf64897b1edfde3211317"
   },
   {
     "url": "liner/summary.html",
-    "revision": "a8aba45a3445a9df9931daa4d1e1becc"
+    "revision": "a8dc08e58994dcd4fdb39705b410e773"
   },
   {
     "url": "LOGO.jpg",
@@ -487,39 +487,39 @@ self.__precacheManifest = [
   },
   {
     "url": "nonliner/classify.html",
-    "revision": "55f5f462e25dcec2fd7e1461c09fda82"
+    "revision": "2cc3cfdcda0177d6dfbb6a92c145fa1e"
   },
   {
     "url": "nonliner/exercises.html",
-    "revision": "e1c287a5faef3ff5ac7c5fb625e503d6"
+    "revision": "17ab0b0ad27c80df642f6e866e70b790"
   },
   {
     "url": "nonliner/index.html",
-    "revision": "f70541418f39360c4f02db0163c24700"
+    "revision": "ff33f2780f785507c1f816b8fde9e810"
   },
   {
     "url": "nonliner/muti.html",
-    "revision": "3070192d464c49d2afbbd079cf8b8263"
+    "revision": "2a818ccdd85fef67974ba31f78bedd8a"
   },
   {
     "url": "nonliner/summary.html",
-    "revision": "10ac7d241a02bf4458a0c8901cb95a09"
+    "revision": "d00ecf3d3f07c112be5d04643fe1164f"
   },
   {
     "url": "nonliner/what.html",
-    "revision": "ac6622bfc88b4003934d0141234972e8"
+    "revision": "275359b9f78abe9790e557a611a3c3df"
   },
   {
     "url": "reinforcement/index.html",
-    "revision": "293d50ccd4b86adcf61efb82be9c3b91"
+    "revision": "20d79a143e40ed0d40755d5186cbb62c"
   },
   {
     "url": "sequences/index.html",
-    "revision": "82a41680c34d9b71f28693cecab7da2a"
+    "revision": "48508d62bf8149b872dbb493a6546f6c"
   },
   {
     "url": "summary/index.html",
-    "revision": "760651aedc11b93cd531a250a292fcc7"
+    "revision": "4983e6735de9d3c1c2f7aa163cc48119"
   },
   {
     "url": "transfer/5.1.png",
@@ -587,27 +587,27 @@ self.__precacheManifest = [
   },
   {
     "url": "transfer/example.html",
-    "revision": "4503e12abc2c73471791b37f41366ce0"
+    "revision": "642617c02ee7892c456cda54dd4e5c8f"
   },
   {
     "url": "transfer/exercises.html",
-    "revision": "8b366417db6723952a607d5041e80534"
+    "revision": "017d2e49d7b9e3815fc3b3d34548d111"
   },
   {
     "url": "transfer/index.html",
-    "revision": "259e8f1ac0bff7eae0bf8139b3d8fc6c"
+    "revision": "9595fce7da050916957f9df525f81f5e"
   },
   {
     "url": "transfer/introduction.html",
-    "revision": "e0c32e5364e8153386d9227f31626a5e"
+    "revision": "938d9286b21144d6361bf283731af423"
   },
   {
     "url": "transfer/summary.html",
-    "revision": "354e360ef480b0ad1299d5d4edb92657"
+    "revision": "b430e7a0b23017c3c1627a89617e051e"
   },
   {
     "url": "visualize/index.html",
-    "revision": "c99165451360fb9a9ef5b6b18e8bbd10"
+    "revision": "ffbaacfd52cbe6b1a50fb1a27b414f3c"
   },
   {
     "url": "wechat.png",
@@ -615,7 +615,7 @@ self.__precacheManifest = [
   },
   {
     "url": "workflow/index.html",
-    "revision": "b14789539754b6bf7c159883a5e5963b"
+    "revision": "aff8e3e323e5954634505679fdddd101"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
