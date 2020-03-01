@@ -85,7 +85,12 @@ module.exports = {
         title: '5.转移学习：重用预训练的神经网络',
         collapsable: true,
         path: '/transfer/',
-        children: []
+        children: [
+          '/transfer/introduction.md',
+          '/transfer/example.md',
+          '/transfer/summary.md',
+          '/transfer/exercises.md'
+        ]
       },
       {
         title: '6.数据集',
