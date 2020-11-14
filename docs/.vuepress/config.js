@@ -96,7 +96,16 @@ module.exports = {
         title: '6.数据集',
         collapsable: true,
         path: '/data/',
-        children: []
+        children: [
+          '/data/data.md',
+          '/data/manageData.md',
+          '/data/practice.md',
+          '/data/patterns.md',
+          '/data/flawed.md',
+          '/data/augment.md',
+          '/data/summary.md',
+          '/data/exercises.md'
+        ]
       },
       {
         title: '7.可视化数据和模型',

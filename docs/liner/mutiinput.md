@@ -7,7 +7,7 @@
 - 了解如何建立一个可以输入多种特征并从中学习的模型
 - 使用 yarn，git 和标准 JS 项目打包来构建和运行带有 ML 的网络应用
 - 知道如何规范化数据以稳定学习过程
-- 训练时使用 tf.Model.fit（）回调来更新 Web UI
+- 训练时使用 tf.Model.fit()回调来更新 Web UI
 
 ## 2.3.1 波士顿房屋价格数据集
 
@@ -207,7 +207,7 @@ export function normalizeTensor(data, dataMean, dataStd) {
 在下一行中，我们从数据中减去（使用 tf.sub ）平均值。
 `const diffFromMean = data.sub(dataMean);`
 如果您没有全力以赴，那么这条线可能隐藏了一段令人愉悦的小魔术。您会看到，data 是形状为[ 333，12 ] 的 2 级张量，而 dataMean 是形状[12] 的 1 级张量。通常，不可能减去两个具有不同形状的张量。但是，在这种情况下，TensorFlow 使用广播来扩展第二张量的形状，实际上是将其重复 333 次，从而完全按照用户的意图进行操作而无需将其拼写出来。获取可用性很方便，但有时形状兼容广播的规则可能会有些混乱。如果您对广播的详细信息感兴趣，请直接跳到下面的信息框 2.5。  
-determineMeanAndStddev 函数的接下来的几行没有新的惊喜。tf.square（）是每个元素的平方，而 tf.sqrt（）取每个元素的平方根。TensorFlow.js API 参考https://js.tensorflow.org/api/latest/中记录了每种方法的详细API 。文档页面还具有实时可编辑的小部件，使您可以探索函数如何使用自己的参数值，如图 2.12 所示。  
+determineMeanAndStddev 函数的接下来的几行没有新的惊喜。tf.square()是每个元素的平方，而 tf.sqrt()取每个元素的平方根。TensorFlow.js API 参考https://js.tensorflow.org/api/latest/中记录了每种方法的详细API 。文档页面还具有实时可编辑的小部件，使您可以探索函数如何使用自己的参数值，如图 2.12 所示。  
 在这个例子中， determineMeanAndStddev 方法可以更简洁地表示为：`const std = data.sub(data.mean(0)).square().mean().sqrt();`
 
 您应该能够看到 TensorFlow 允许我们在无需太多代码的情况下表达很多计算。
@@ -243,7 +243,7 @@ const LEARNING_RATE = 0.01;
 model.compile({ optimizer: tf.train.sgd(LEARNING_RATE), loss: 'meanSquaredError' });
 ```
 
-现在我们可以使用训练数据集训练模型。在清单 2.12 到 2.14 中，我们将使用 model.fit（）调用的一些附加功能，但实际上它的作用与图 2.6 相同。在每个步骤中，它从特征（tensors.trainFeatures ）和目标（tensors.trainTarget ）中选择许多新样本，计算损失，然后更新内部系数以减少损失。该过程将重复 NUM_EPOCHS 次训练数据，并在每个步骤中选择 BATCH_SIZE 个样本。
+现在我们可以使用训练数据集训练模型。在清单 2.12 到 2.14 中，我们将使用 model.fit()调用的一些附加功能，但实际上它的作用与图 2.6 相同。在每个步骤中，它从特征（tensors.trainFeatures ）和目标（tensors.trainTarget ）中选择许多新样本，计算损失，然后更新内部系数以减少损失。该过程将重复 NUM_EPOCHS 次训练数据，并在每个步骤中选择 BATCH_SIZE 个样本。
 
 ###### 清单 2.12 在波士顿住房数据上训练模型
 
@@ -254,7 +254,7 @@ await model.fit(tensors.trainFeatures, tensors.trainTarget, {
 });
 ```
 
-在波士顿住房应用中，我们演示了模型训练时训练损失的图表。这需要使用 model.fit（）的回调功能来更新 UI。所述 model.fit（）回调 API 允许用户提供回调函数，这将在特定事件被执行。从 0.12.0 版本开始，回调触发器的完整列表是 onTrainBegin ，onTrainEnd ，onEpochBegin ，onEpochEnd ，onBatchBegin 和 onBatchEnd 。
+在波士顿住房应用中，我们演示了模型训练时训练损失的图表。这需要使用 model.fit()的回调功能来更新 UI。所述 model.fit()回调 API 允许用户提供回调函数，这将在特定事件被执行。从 0.12.0 版本开始，回调触发器的完整列表是 onTrainBegin ，onTrainEnd ，onEpochBegin ，onEpochEnd ，onBatchBegin 和 onBatchEnd 。
 
 ###### 清单 2.13 model.fit 中的回调
 
@@ -279,7 +279,7 @@ await model.fit(tensors.trainFeatures, tensors.trainTarget, {
 - 训练数据：使用梯度下降拟合模型系数。
 - 在 TensorFlow.js 中的用法：通常，训练数据使用主要参数（x 和 y ）来调用 Model.fit（x，y，config）。
 - 验证数据：用于选择模型结构和超参数。
-- TensorFlow.js 中的用法：Model.fit（）有两种指定验证数据的方式，它们都是 config 参数。如果您（用户）具有用于验证的显式数据，则可以将其指定为 config.validationData 。相反，如果您希望框架拆分一些训练数据并将其用作验证数据，请在 config.validationSplit 中指定要使用的分数。该框架将注意不要使用验证数据来训练模型，因此不会有重叠。
+- TensorFlow.js 中的用法：Model.fit()有两种指定验证数据的方式，它们都是 config 参数。如果您（用户）具有用于验证的显式数据，则可以将其指定为 config.validationData 。相反，如果您希望框架拆分一些训练数据并将其用作验证数据，请在 config.validationSplit 中指定要使用的分数。该框架将注意不要使用验证数据来训练模型，因此不会有重叠。
 - 测试数据：对模型性能的最终无偏估计。
 - TensorFlow.js 中的用法：通过将评估数据作为 x 和 y 参数传递给 Model.evaluate（x，y，config）来向系统公开评估数据。  
   在清单 2.14 中，验证损失与训练损失一起计算。所述 validationSplit：0.2 字段表示选择训练数据的最后 20％作为验证数据来使用。此数据将不会用于训练（它不会影响梯度下降）。
@@ -304,7 +304,7 @@ await model.fit(tensors.trainFeatures, tensors.trainTarget, {
 });
 ```
 
-在浏览器中，将此模型训练到 200 个循环大约需要 11 秒钟。现在，我们可以在测试集中评估模型，以查看它是否比基线更好。清单 2.15 显示了如何使用`model.evaluate（）`来收集我们保留的测试数据上的模型性能，然后调用我们的自定义 UI 例程来更新视图。
+在浏览器中，将此模型训练到 200 个循环大约需要 11 秒钟。现在，我们可以在测试集中评估模型，以查看它是否比基线更好。清单 2.15 显示了如何使用`model.evaluate()`来收集我们保留的测试数据上的模型性能，然后调用我们的自定义 UI 例程来更新视图。
 
 ###### 清单 2.15 在测试数据上评估我们的模型并更新 UI（来自 index.js）
 
@@ -319,7 +319,7 @@ await ui.updateStatus(
 );
 ```
 
-在这里，`model.evaluate（）`返回一个标量，其中包含在测试集上计算的损失。  
+在这里，`model.evaluate()`返回一个标量，其中包含在测试集上计算的损失。  
 由于梯度下降的随机性，您可能会得到不同的结果，但是以下结果是典型的：
 
 - 最终训练集损失：21.9864

@@ -17,7 +17,7 @@ yarn && yarn watch
 const ys = tf.oneHot(tf.tensor1d(shuffledTargets).toInt(), IRIS_NUM_CLASSES);
 ```
 
-在这里，shuffledTargets 是一个 JavaScript 数组，由示例的整数标签组成，顺序为随机排序。其元素的值分别为 0、1 和 2，反映了数据集中的三个种类。通过 tf.tensor1d（shuffledTargets）.toInt（）调用将其转换为 int32 类型的 1D 张量。然后将所得的一维张量传递到 tf.oneHot（）函数中，该函数返回形状为[numExamples，IRIS_NUM_CLASSES] 的 2D 张量。numExamples 是目标包含的示例数，而 IRIS_NUM_CLASSES 只是常量 3。您可以通过在上面引用行正下方添加一些打印行来检查目标和 ys 的实际值，例如：
+在这里，shuffledTargets 是一个 JavaScript 数组，由示例的整数标签组成，顺序为随机排序。其元素的值分别为 0、1 和 2，反映了数据集中的三个种类。通过 tf.tensor1d（shuffledTargets）.toInt()调用将其转换为 int32 类型的 1D 张量。然后将所得的一维张量传递到 tf.oneHot()函数中，该函数返回形状为[numExamples，IRIS_NUM_CLASSES] 的 2D 张量。numExamples 是目标包含的示例数，而 IRIS_NUM_CLASSES 只是常量 3。您可以通过在上面引用行正下方添加一些打印行来检查目标和 ys 的实际值，例如：
 
 ```js
 const ys = tf.oneHot(tf.tensor1d(shuffledTargets).toInt(), IRIS_NUM_CLASSES);
@@ -26,7 +26,7 @@ console.log('Value of targets:', targets);
 ys.print()[60];
 ```
 
-进行这些更改后，终端 yarn watch 命令启动打包程序将自动重建 Web 文件。然后，您可以在用于观看此演示的浏览器选项卡中打开 devtool 并刷新页面。来自 console.log 和 print（）调用的打印消息将被记录到 devtool 的控制台中。
+进行这些更改后，终端 yarn watch 命令启动打包程序将自动重建 Web 文件。然后，您可以在用于观看此演示的浏览器选项卡中打开 devtool 并刷新页面。来自 console.log 和 print()调用的打印消息将被记录到 devtool 的控制台中。
 您将看到的打印消息看起来像这样
 
 ```js
@@ -120,7 +120,7 @@ tf.softmax(x).print();
 ```
 
 softmax 函数输出的三个元素是 1）全部在[0，1]中； 2）总和为 1； 3）以与输入向量中的顺序匹配的方式进行排序。由于这些属性，可以将输出解释为（由模型）分配给所有可能类别的概率值。在上面的示例中，第二个类别的概率最高，而第一个类别的概率最低。
-当使用这种类型的多类分类器的输出时，可以选择最高 softmax 元素的索引作为最终决策，即，对输入所属类别的决策。这可以通过使用 argMax（）方法来实现。例如，这是 index.js 的摘录：
+当使用这种类型的多类分类器的输出时，可以选择最高 softmax 元素的索引作为最终决策，即，对输入所属类别的决策。这可以通过使用 argMax()方法来实现。例如，这是 index.js 的摘录：
 
 ```js
 const predictOut = model.predict(input);
@@ -183,7 +183,7 @@ tf.metrics.categoricalCrossentropy(oneHotTruth, probs).print();
 ###### 图 3.9 训练 iris 模型 40 周期的结果。左上方：针对训练时期绘制的损失函数。右上：相对于训练时期绘制的准确性。下：混淆矩阵。
 
 <img :src="$withBase('/nonliner/3.9.png')" alt="figure3.9"/> 
-除了显示最终的混淆矩阵之外，iris示例还使用onTrainEnd（）回调在每个训练时期的末尾绘制混淆矩阵。开始阶段，您可能会看到一些其他类型的矩阵（例如，参见下面的图3.10）。
+除了显示最终的混淆矩阵之外，iris示例还使用onTrainEnd()回调在每个训练时期的末尾绘制混淆矩阵。开始阶段，您可能会看到一些其他类型的矩阵（例如，参见下面的图3.10）。
  
  
 ###### 图3.10 “不完美”混淆矩阵的示例，其中对角线外有非零元素。在训练收敛之前，仅在2次训练周期后生成此混淆矩阵 
