@@ -1,4 +1,4 @@
-# 6.2使用tf.data管理数据
+# 6.2 使用tf.data管理数据
 如果您的电子邮件数据库是数百GB，并且需要特殊凭据才能访问，您将如何训练垃圾邮件过滤器？如果训练图像的数据库太大，无法在一台机器上容纳，如何构造图像分类器？
 
 访问和操作大量数据是机器学习工程师的一项关键技能，但到目前为止，我们一直在处理那些可用内存的数据。许多应用程序需要处理大型、繁琐且可能对隐私敏感的数据源，而这种技术不适合这些数据源。大型应用程序需要从远程按需访问数据的技术。
@@ -6,7 +6,6 @@
 TensorFlow.js附带了一个集成库，专门为这种数据管理而设计。受TensorFlow的Python版本tf.data API的启发，它的构建使用户能够以简洁易读的方式接收、预处理和路由数据。假设您的代码使用如下import语句导入TensorFlow.js：
  ```js
 import * as tf from '@tensorflow/tfjs';
-
 ```
 此功能将在命名空间下tf.data可用。
 
@@ -167,4 +166,21 @@ let count = 0;
 dataset.map另一个常见的用途是规范化我们的输入数据。可以想象这样一个场景：我们有无限的输入样本，但希望输入为均值。为了抹平数据，我们首先需要计算分布的平均值，但是计算无限集的平均值是难于处理的。可以考虑抽取一个有代表性的样本，并计算该样本的平均值，但如果我们不知道正确的样本大小，我们可能会犯错误。比如一个几乎所有值都为0的分布，但每1000万个示例的值中只有一个值为1e9。这个分布的平均值是100，如果只取某一部分的集合，数据就会有问题。
 我们可以按照下面的方式使用dataset api进行数据规范化，如清单6.6所示。在这个清单中，我们将持续记录我们看到了多少个样本，以及这些样本的总和是多少。下面的清单对标量（不是张量）进行操作，但是为张量设计的版本也具有类似的结构。
 ###### 清单6.6使用tf.data.map的流标准化
+```js
+function newStreamingZeroMeanFn() {
+     let samplesSoFar = 0;
+     let sumSoFar = 0;
+  
+     return (x) => {
+       samplesSoFar += 1;
+       sumSoFar += x;
+       const estimatedMean = sumSoFar / samplesSoFar;
+       return x - estimatedMean;
+     }
+   
+   }
+  
+   const normalizedDataset1 = unNormalizedDataset1.map(newStreamingZeroMeanFn());
+   const normalizedDataset2 = unNormalizedDataset2.map(newStreamingZeroMeanFn());
+```
 我们生成了一个新的映射函数，它将示例计数器和累加器进行联系。这是为了允许独立地规范化多个数据集。此解决方案也有自身局限性，特别是在sumSoFar或samplesSoFar中存在数值溢出的可能性时，因此需要注意一些问题。
