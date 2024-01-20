@@ -5,7 +5,7 @@
     <h2>Deep Learning with Javascript</h2>
 </div>
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 
 此书是 [《DEEP LEARNING WITH JAVASCRIPT》](https://livebook.manning.com/book/deep-learning-with-javascript/welcome/v-8/) 的中文翻译版.
 
@@ -23,8 +23,8 @@
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/32283997?s=460&v=4" width="100px;" alt="wenyan"/><br /><sub><b>wenyan</b></sub>](https://github.com/Wendydesigner)<br />[📖](https://github.com/Wendydesigner/deep-learning-with-javascript-in-chinese/commits?author=Wendydesigner "Documentation") [💻](https://github.com/Wendydesigner/deep-learning-with-javascript-in-chinese/commits?author=Wendydesigner "Code") | [<img src="https://avatars2.githubusercontent.com/u/18010840?s=460&v=4" width="100px;" alt="zhaowei"/><br /><sub><b>zhaowei</b></sub>](https://github.com/zhaowei555)<br />[📖](https://github.com/Wendydesigner/deep-learning-with-javascript-in-chinese/commits?author=zhaowei555 "Documentation") |
-| :---: | :---: |
+| [<img src="https://avatars3.githubusercontent.com/u/32283997?s=460&v=4" width="100px;" alt="wenyan"/><br /><sub><b>wenyan</b></sub>](https://github.com/Wendydesigner)<br />[📖](https://github.com/Wendydesigner/deep-learning-with-javascript-in-chinese/commits?author=Wendydesigner "Documentation") [💻](https://github.com/Wendydesigner/deep-learning-with-javascript-in-chinese/commits?author=Wendydesigner "Code") | [<img src="https://avatars2.githubusercontent.com/u/18010840?s=460&v=4" width="100px;" alt="zhaowei"/><br /><sub><b>zhaowei</b></sub>](https://github.com/zhaowei555)<br />[📖](https://github.com/Wendydesigner/deep-learning-with-javascript-in-chinese/commits?author=zhaowei555 "Documentation") | [<img src="https://avatars.githubusercontent.com/u/48508952?v=4" width="100px;" alt="Jean"/><br /><sub><b>Jean</b></sub>](https://github.com/jean-zhou)<br />[🖋](#content-jean-zhou "Content") [📖](https://github.com/Wendydesigner/deep-learning-with-javascript-in-chinese/commits?author=jean-zhou "Documentation") |
+| :---: | :---: | :---: |
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
